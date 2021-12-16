@@ -36,6 +36,8 @@ df = spark.read.format("csv").option("sep",";").option("header", "true").schema(
 
 df.printSchema()
 
+df.show()
+
 
 # df.show(10, truncate = True)
 
